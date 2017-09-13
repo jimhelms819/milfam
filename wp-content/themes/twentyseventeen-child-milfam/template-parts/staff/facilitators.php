@@ -13,5 +13,9 @@
   </div>
   <div class="col_two">
     <?php the_content(); ?>
+
+    <?php if ( get_post_meta( get_the_ID(), 'presentations', true ) ): ?>
+      <?php echo html_entity_decode(get_post_meta( get_the_ID(), 'presentations', true )); ?>
+    <?php endif; ?>
   </div>
 </div>
