@@ -15,6 +15,7 @@
     <?php the_content(); ?>
 
     <?php if ( get_post_meta( get_the_ID(), 'presentations', true ) ): ?>
+      <h5>Presentations</h5>
       <?php echo html_entity_decode(get_post_meta( get_the_ID(), 'presentations', true )); ?>
     <?php endif; ?>
   </div>
